@@ -44,7 +44,7 @@ function App() {
     e.preventDefault();
     setError(null);
     try {
-      await client.functions.updateOrderStatus(statusUpdate);
+  await client.call('updateOrderStatus', statusUpdate);
       setStatusUpdate({ id: '', status: '' });
       // Refresh list
       const { data } = await client.models.transportOrder.list();
