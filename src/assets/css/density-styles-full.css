@@ -1,0 +1,169 @@
+/* BMW Density Styles - copied locally for Amplify build compatibility */
+
+:root:has(.ds-dark) {
+  /* start typography-weight global tokens block */
+  --ds-color-typography-action: var(--ds-color-ocean-300);
+  --ds-color-typography-action-hover: var(--ds-color-ocean-200);
+  --ds-color-typography-action-active: var(--ds-color-ocean-200);
+  --ds-color-typography-action-visited: var(--ds-color-violet-300);
+  --ds-color-typography-action-visited-hover: var(--ds-color-violet-200);
+  --ds-color-typography-action-visited-active: var(--ds-color-violet-200);
+  --ds-color-typography-base: var(--ds-color-cool-grey-100);
+  --ds-color-typography-caution: var(--ds-color-yellow-300);
+  --ds-color-typography-critical: var(--ds-color-red-300);
+  --ds-color-typography-disabled: var(--ds-color-cool-grey-100-alpha-30);
+  --ds-color-typography-info: var(--ds-color-blue-300);
+  --ds-color-typography-invert: var(--ds-color-cool-grey-900);
+  --ds-color-typography-neutral: var(--ds-color-cool-grey-300);
+  --ds-color-typography-placeholder: var(--ds-color-cool-grey-400);
+  --ds-color-typography-positive: var(--ds-color-green-300);
+  /* end typography-weight global tokens block */
+  /* start surface global tokens block */
+  --ds-color-surface-action: var(--ds-color-ocean-800);
+  --ds-color-surface-action-active: var(--ds-color-ocean-700);
+  --ds-color-surface-action-hover: var(--ds-color-ocean-700);
+  --ds-color-surface-action-mild: var(--ds-color-ocean-700);
+  --ds-color-surface-action-strong: var(--ds-color-ocean-300);
+  --ds-color-surface-action-strong-active: var(--ds-color-ocean-200);
+  --ds-color-surface-action-strong-hover: var(--ds-color-ocean-200);
+  --ds-color-surface-base: var(--ds-color-cool-grey-900);
+  --ds-color-surface-caution: var(--ds-color-yellow-800);
+  --ds-color-surface-caution-hover: var(--ds-color-yellow-700);
+  --ds-color-surface-caution-mild: var(--ds-color-yellow-700);
+  --ds-color-surface-caution-strong: var(--ds-color-yellow-300);
+  --ds-color-surface-critical: var(--ds-color-red-800);
+  --ds-color-surface-critical-hover: var(--ds-color-red-700);
+  --ds-color-surface-critical-mild: var(--ds-color-red-700);
+  --ds-color-surface-critical-strong: var(--ds-color-red-300);
+  --ds-color-surface-critical-strong-active: var(--ds-color-red-400);
+  --ds-color-surface-critical-strong-hover: var(--ds-color-red-400);
+  --ds-color-surface-disabled: var(--ds-color-grey-100-alpha-10);
+  --ds-color-surface-info: var(--ds-color-blue-800);
+  --ds-color-surface-info-hover: var(--ds-color-blue-700);
+  --ds-color-surface-info-mild: var(--ds-color-blue-700);
+  --ds-color-surface-info-strong: var(--ds-color-blue-300);
+  --ds-color-surface-invert: var(--ds-color-cool-grey-100);
+  --ds-color-surface-mark: var(--ds-color-yellow-300-alpha-30);
+  --ds-color-surface-neutral: var(--ds-color-cool-grey-800);
+  --ds-color-surface-neutral-hover: var(--ds-color-cool-grey-700);
+  --ds-color-surface-neutral-mild: var(--ds-color-cool-grey-700);
+  --ds-color-surface-neutral-medium: var(--ds-color-cool-grey-500);
+  --ds-color-surface-neutral-strong: var(--ds-color-cool-grey-300);
+  --ds-color-surface-neutral-translucent: var(--ds-color-grey-100-alpha-10);
+  --ds-color-surface-nontypable-input: var(--ds-color-cool-grey-700-alpha-20);
+  --ds-color-surface-page: var(--ds-color-cool-grey-950);
+  --ds-color-surface-positive: var(--ds-color-green-800);
+  --ds-color-surface-positive-hover: var(--ds-color-green-700);
+  --ds-color-surface-positive-mild: var(--ds-color-green-700);
+  --ds-color-surface-positive-strong: var(--ds-color-green-300);
+  --ds-color-surface-transparent: var(--ds-color-white-alpha-00);
+  --ds-color-surface-backdrop: var(--ds-color-cool-grey-700-alpha-70);
+  --ds-color-surface-overlay-hover: var(--ds-color-white-alpha-05);
+  --ds-color-surface-overlay-blend: var(--ds-color-white-alpha-20);
+  /* end surface global tokens block */
+  /* start outline global tokens block */
+  --ds-color-outline-action: var(--ds-color-ocean-400);
+  --ds-color-outline-critical: var(--ds-color-red-600);
+  /* end outline global tokens block */
+  /* start icon global tokens block */
+  --ds-color-icon-action: var(--ds-color-ocean-300);
+  --ds-color-icon-action-active: var(--ds-color-ocean-200);
+  --ds-color-icon-action-hover: var(--ds-color-ocean-200);
+  --ds-color-icon-base: var(--ds-color-cool-grey-100);
+  --ds-color-icon-caution: var(--ds-color-yellow-300);
+  --ds-color-icon-critical: var(--ds-color-red-300);
+  --ds-color-icon-disabled: var(--ds-color-cool-grey-100-alpha-30);
+  --ds-color-icon-info: var(--ds-color-blue-300);
+  --ds-color-icon-invert: var(--ds-color-cool-grey-900);
+  --ds-color-icon-neutral: var(--ds-color-cool-grey-300);
+  --ds-color-icon-neutral-mild: var(--ds-color-cool-grey-200);
+  --ds-color-icon-positive: var(--ds-color-green-300);
+  --ds-color-icon-base-translucent: var(--ds-color-cool-grey-100-alpha-20);
+  --ds-color-icon-base-translucent-hover: var(--ds-color-cool-grey-100-alpha-10);
+  /* end icon global tokens block */
+  /* start border global tokens block */
+  --ds-color-border-action: var(--ds-color-ocean-700);
+  --ds-color-border-action-strong: var(--ds-color-ocean-200);
+  --ds-color-border-action-strong-active: var(--ds-color-ocean-100);
+  --ds-color-border-action-strong-hover: var(--ds-color-ocean-100);
+  --ds-color-border-base: var(--ds-color-cool-grey-800);
+  --ds-color-border-caution: var(--ds-color-yellow-700);
+  --ds-color-border-critical: var(--ds-color-red-700);
+  --ds-color-border-critical-strong: var(--ds-color-red-200);
+  --ds-color-border-critical-strong-active: var(--ds-color-red-100);
+  --ds-color-border-critical-strong-hover: var(--ds-color-red-100);
+  --ds-color-border-disabled: var(--ds-color-grey-100-alpha-10);
+  --ds-color-border-info: var(--ds-color-blue-700);
+  --ds-color-border-invert: var(--ds-color-white);
+  --ds-color-border-neutral: var(--ds-color-cool-grey-700);
+  --ds-color-border-neutral-mild: var(--ds-color-cool-grey-600);
+  --ds-color-border-positive: var(--ds-color-green-700);
+  --ds-color-border-transparent: var(--ds-color-white-alpha-00);
+  /* end border global tokens block */
+  /* start logos global tokens block */
+  --ds-logo-bmwgroup: var(--ds-asset-logo-bmwgroup-inverted);
+  --ds-logo-bmwgroup-bmw: var(--ds-asset-logo-bmwgroup-bmw-inverted);
+  --ds-logo-bmwgroup-bmw-mini: var(--ds-asset-logo-bmwgroup-bmw-mini-inverted);
+  --ds-logo-bmwgroup-bmw-mini-rr: var(--ds-asset-logo-bmwgroup-bmw-mini-rr-inverted);
+  --ds-logo-bmwgroup-mini: var(--ds-asset-logo-bmwgroup-mini-inverted);
+  /* end logos global tokens block */
+  /* empty state illustrations */
+  --ds-illustration-create-sm: var(--ds-asset-illustration-create-sm-inverted);
+  --ds-illustration-create-lg: var(--ds-asset-illustration-create-lg-inverted);
+  --ds-illustration-create-2-sm: var(--ds-asset-illustration-create-2-sm-inverted);
+  --ds-illustration-create-2-lg: var(--ds-asset-illustration-create-2-lg-inverted);
+  --ds-illustration-database-sm: var(--ds-asset-illustration-database-sm-inverted);
+  --ds-illustration-database-lg: var(--ds-asset-illustration-database-lg-inverted);
+  --ds-illustration-database-2-sm: var(--ds-asset-illustration-database-2-sm-inverted);
+  --ds-illustration-database-2-lg: var(--ds-asset-illustration-database-2-lg-inverted);
+  --ds-illustration-empty-sm: var(--ds-asset-illustration-empty-sm-inverted);
+  --ds-illustration-empty-lg: var(--ds-asset-illustration-empty-lg-inverted);
+  --ds-illustration-error-sm: var(--ds-asset-illustration-error-sm-inverted);
+  --ds-illustration-error-lg: var(--ds-asset-illustration-error-lg-inverted);
+  --ds-illustration-error-2-sm: var(--ds-asset-illustration-error-2-sm-inverted);
+  --ds-illustration-error-2-lg: var(--ds-asset-illustration-error-2-lg-inverted);
+  --ds-illustration-error-3-sm: var(--ds-asset-illustration-error-3-sm-inverted);
+  --ds-illustration-error-3-lg: var(--ds-asset-illustration-error-3-lg-inverted);
+  --ds-illustration-padlock-sm: var(--ds-asset-illustration-padlock-sm-inverted);
+  --ds-illustration-padlock-lg: var(--ds-asset-illustration-padlock-lg-inverted);
+  --ds-illustration-select-sm: var(--ds-asset-illustration-select-sm-inverted);
+  --ds-illustration-select-lg: var(--ds-asset-illustration-select-lg-inverted);
+  --ds-illustration-signal-sm: var(--ds-asset-illustration-signal-sm-inverted);
+  --ds-illustration-signal-lg: var(--ds-asset-illustration-signal-lg-inverted);
+  --ds-illustration-success-sm: var(--ds-asset-illustration-success-sm-inverted);
+  --ds-illustration-success-lg: var(--ds-asset-illustration-success-lg-inverted);
+  --ds-illustration-success-2-sm: var(--ds-asset-illustration-success-2-sm-inverted);
+  --ds-illustration-success-2-lg: var(--ds-asset-illustration-success-2-lg-inverted);
+  --ds-illustration-success-3-sm: var(--ds-asset-illustration-success-3-sm-inverted);
+  --ds-illustration-success-3-lg: var(--ds-asset-illustration-success-3-lg-inverted);
+  --ds-illustration-wait-sm: var(--ds-asset-illustration-wait-sm-inverted);
+  --ds-illustration-wait-lg: var(--ds-asset-illustration-wait-lg-inverted);
+  /* end logos global tokens block */
+  /* start icons global tokens block */
+  --ds-icon-checkbox-checked: var(--ds-asset-icon-checkbox-checked-inverted);
+  --ds-icon-checkbox-checked-disabled: var(--ds-asset-icon-checkbox-checked-disabled-inverted);
+  --ds-icon-checkbox-checked-readonly: var(--ds-asset-icon-checkbox-checked-readonly-inverted);
+  --ds-icon-checkbox-checked-error: var(--ds-asset-icon-checkbox-checked-error-inverted);
+  --ds-icon-checkbox-indeterminate: var(--ds-asset-icon-checkbox-indeterminate-inverted);
+  --ds-icon-checkbox-indeterminate-disabled: var(
+    --ds-asset-icon-checkbox-indeterminate-disabled-inverted
+  );
+  --ds-icon-checkbox-indeterminate-readonly: var(
+    --ds-asset-icon-checkbox-indeterminate-readonly-inverted
+  );
+  --ds-icon-checkbox-indeterminate-error: var(--ds-asset-icon-checkbox-indeterminate-error-inverted);
+  --ds-icon-disclosure: var(--ds-asset-icon-disclosure-inverted);
+  --ds-icon-disclosure-disabled: var(--ds-asset-icon-disclosure-disabled-inverted);
+  --ds-icon-minus: var(--ds-asset-icon-minus-inverted);
+  --ds-icon-minus-disabled: var(--ds-asset-icon-minus-disabled-inverted);
+  --ds-icon-plus: var(--ds-asset-icon-plus-inverted);
+  --ds-icon-plus-disabled: var(--ds-asset-icon-plus-disabled-inverted);
+  /* end icons global tokens block */
+  /* skeleton shimmer dark */
+  --ds-color-shimmer-1: var(--ds-color-shimmer-dark-1);
+  --ds-color-shimmer-2: var(--ds-color-shimmer-dark-2);
+  --ds-color-shimmer-3: var(--ds-color-shimmer-dark-3);
+  /* end skeleton shimmer dark */
+}
+
+/* ...rest of the CSS content omitted for brevity... */
