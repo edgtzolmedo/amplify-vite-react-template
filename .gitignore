@@ -1,3 +1,5 @@
+# Ignore local git credentials
+.git-credentials
 # Logs
 logs
 *.log

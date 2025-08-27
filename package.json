@@ -12,7 +12,6 @@
   "dependencies": {
     "@apollo/client": "^4.0.1",
     "@aws-amplify/ui-react": "^6.12.0",
-    "@bmw-ds/density-styles": "^10.3.0",
     "aws-amplify": "^6.15.5",
     "graphql": "^16.11.0",
     "react": "^19.1.1",
