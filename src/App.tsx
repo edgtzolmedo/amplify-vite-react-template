@@ -55,30 +55,30 @@ function App() {
     }
   };
 
-      await client.typedFunctions.updateOrderStatus(statusUpdate);
-    <div style={{ maxWidth: 700, margin: '2rem auto', fontFamily: 'sans-serif' }}>
+  return (
+    <div className="transport-orders-container">
       <h1>Transport Orders</h1>
-      {error && <div style={{ color: 'red' }}>{error}</div>}
+      {error && <div className="error-message">{error}</div>}
       <h2>Create New Order</h2>
-      <form onSubmit={handleCreate} style={{ marginBottom: 24 }}>
+      <form onSubmit={handleCreate} className="order-form">
         <input
           placeholder="VIN"
           value={form.vin}
           onChange={e => setForm(f => ({ ...f, vin: e.target.value }))}
           required
-        />{' '}
-    <div className="transport-orders-container">
+        />
+        <input
           placeholder="Plant"
           value={form.plant}
           onChange={e => setForm(f => ({ ...f, plant: e.target.value }))}
           required
-        />{' '}
+        />
         <input
           placeholder="Port"
           value={form.port}
           onChange={e => setForm(f => ({ ...f, port: e.target.value }))}
           required
-        />{' '}
+        />
         <button type="submit">Create</button>
       </form>
 
@@ -86,7 +86,7 @@ function App() {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <table border={1} cellPadding={8} style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <table className="orders-table" border={1} cellPadding={8}>
           <thead>
             <tr>
               <th>ID</th>
@@ -113,23 +113,24 @@ function App() {
       )}
 
       <h2>Update Order Status</h2>
-      <form onSubmit={handleStatusUpdate} style={{ marginTop: 16 }}>
+      <form onSubmit={handleStatusUpdate} className="status-form">
         <input
           placeholder="Order ID"
           value={statusUpdate.id}
           onChange={e => setStatusUpdate(s => ({ ...s, id: e.target.value }))}
           required
-        />{' '}
+        />
         <select
           value={statusUpdate.status}
           onChange={e => setStatusUpdate(s => ({ ...s, status: e.target.value }))}
           required
+          title="Order Status"
         >
           <option value="">Select status</option>
           <option value="pending">Pending</option>
           <option value="in_transit">In Transit</option>
           <option value="delivered">Delivered</option>
-        </select>{' '}
+        </select>
         <button type="submit">Update Status</button>
       </form>
     </div>
