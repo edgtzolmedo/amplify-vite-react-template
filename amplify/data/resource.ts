@@ -12,7 +12,7 @@ const updateOrderStatus = defineFunction()
     id: a.id().required(),
     status: a.string().required(),
   })
-  .handler(async (ctx, args) => {
+  .handler(async (ctx: any, args: any) => {
     const order = await ctx.models.transportOrder.get({ id: args.id });
     if (!order) throw new Error('Order not found');
     const validStatuses = ['pending', 'in_transit', 'delivered'];
@@ -29,10 +29,14 @@ const schema = a.schema({
       status: a.string().default('pending'),
       createdAt: a.datetime().default(() => new Date()),
     })
-    .authorization((allow) => [allow.owner(), allow.group('admin')]),
+  .authorization((allow: any) => [allow.owner(), allow.group('admin')]),
   updateOrderStatus,
 });
 
+// Type definitions for function parameters
+type Context = any; // Replace with actual context type if available
+type Args = any;    // Replace with actual args type if available
+type Allow = any;   // Replace with actual allow type if available
 
 export type Schema = ClientSchema<typeof schema>;
 
