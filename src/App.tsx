@@ -1,10 +1,10 @@
 
 import { useEffect, useState } from 'react';
+
 import { generateClient } from 'aws-amplify/data';
 import type { Schema } from '../amplify/data/resource';
 
 const client = generateClient<Schema>();
-
 type TransportOrder = Schema['models']['transportOrder']['type'];
 
 function App() {
@@ -39,12 +39,12 @@ function App() {
     }
   };
 
-  // Update order status
+  // Update order status (using model update)
   const handleStatusUpdate = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
     try {
-  await client.functions.updateOrderStatus(statusUpdate);
+      await client.models.transportOrder.update({ id: statusUpdate.id, status: statusUpdate.status });
       setStatusUpdate({ id: '', status: '' });
       // Refresh list
       const { data } = await client.models.transportOrder.list();
